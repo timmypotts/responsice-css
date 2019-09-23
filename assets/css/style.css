@@ -1,95 +1,173 @@
-body {
-  background-image: url("../images/papyrus.png");
+
+/*Structure and background */
+
+.page{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+html,body{
+  background-image:url("../images/papyrus.png");
+  height:100%;
+  padding:0;
+  margin:0;
 }
 
-h1 {
-  font-family: 'Rubik', sans-serif;
-  background-color: #4aaaa5;
-  padding: 11.5px;
-  margin: 0;
-  color: #ffffff;
-  top: 0;
-  overflow: hidden;
-  position: fixed;
-}
-
-h2 {
-  font-family: 'Georgia', Times, Times New Roman, serif;
-  font-size: 30px;
-  color: #4aaaa5;
-  border-bottom: 3px solid lightgray;
-  padding: 15px;
-}
-
-p {
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  line-height: 1.5;
-  color: #777777
-}
-
-div {
-  width: 960px;
-  border: 1px solid white;
-  padding: 0px;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 5%;
-  background-color: white;
-}
-
-
-/* TOPBAR STUFF */
-
-.margin {
+.container {
   width: 960px;
   margin: auto;
   float: top;
+  background-color: blue;
 }
 
 
-header {
+/*Navbar stuff*/
+.navbar{
+  background:white;
   width: 100%;
-  background-color: white;
-  margin: 0;
-  overflow: hidden;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  top: 0;
-  left: 0;
-  position: fixed;
-  border-bottom: 2px solid lightgray;
+  float:left;
+  
 }
-
-.head {
-  border: white;
-  top: 0;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-}
-
-li {
-  float: right;
-}
-
-li a {
-  display: block;
-  transition: 0.3s;
-  color: grey;
+h1{
+  background-color:#4aaaa5;
+  height: 50px;
+  padding: 25px 10px 10px 10px;
+  border: 1px solid white;
+  float: left;
+  margin-bottom:0;
+  margin-left: 5%;
+  margin-top: 0;
+  color:white;
   text-align: center;
-  padding: 20px;
-  text-decoration: none;
-  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight:bold;
+  font-family:'Times New Roman', Times, serif
+}
+Contact{
+  float:right;
+  margin-top: 2%;
+  padding: 25px 10px 10px 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#777777;
+  margin-right: 5%
+  
+}
+portfolio{
+  float: right;
+  margin-top: 2%;
+  padding: 25px 10px 10px 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#777777;
+  
+}
+about{
+  float: right;
+  margin-top: 2%;
+  padding: 25px 10px 10px 10px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#777777;
+  
 }
 
-li a:hover {
-  background-color: #4aaaa5;
+a:link {
+  font-family:Arial, Helvetica, sans-serif;
+  color:#777777;
+  text-decoration:none;
 }
+
+
+a:visited {
+  font-family:Arial, Helvetica, sans-serif;
+  color:#777777;
+  text-decoration:none;
+}
+
+a:hover {
+  font-family:Arial, Helvetica, sans-serif;
+  color:#777777;
+  text-decoration:none;
+}
+
+
+a:active {
+  font-family:Arial, Helvetica, sans-serif;
+  color:#777777;
+  text-decoration:none;
+}
+
+
+/* Content containers, clearfix */
+
+
+.square{
+  float:left;
+  width:70%;
+  height:60%;
+  background:white;
+  padding: 0 25px 25px 25px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#777777;
+  margin-top: 20px;
+  margin-left: 15%;
+}
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+  margin-top:15%;
+}
+img{
+  float:left;
+  width:330px;
+  padding: 5px 25px 5px 0px;
+
+}
+.img-fluid. {
+max-width: 320px; 
+height:auto;
+}
+p{
+  font-family:Arial, Helvetica, sans-serif;
+  color:#777777;
+  line-height: 25px;
+}
+h2{
+  color:#4aaaa5;
+  font-weight:bold;
+  font-family:'Times New Roman', Times, serif;
+}
+hr{
+  width:95%;
+  color:#777777;
+}
+
+
+/* Contact */
+form{
+  font-family:Arial, Helvetica, sans-serif;
+  color:#777777;
+}
+
+
+button {
+  background-color: #4aaaa5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+input[type=text]{
+width:95%;
+}
+
+input.message{
+height:130px;
+}
+
 
 /* Portfolio Thumbnails */
 
@@ -103,18 +181,34 @@ li a:hover {
   float: left;
   z-index: -2
 }
+.tiles{
+  width:80%;
+  height:100%;
+  margin:0 25px 0 30px;
+}
+
+.tile{
+  float: left;
+  height: 200px;
+  width: 250px;
+  padding:0 50px 40px 0;
+  margin: 30px;
+}
 
 .overlay {
   position: absolute;
-  bottom: -20px;
-  right: 50px;
-  background-color: #4aaaa5;
-  color: white;
-  padding: 30px 100px 30px 100px;
-  z-index: -1
+  background-color:#4aaaa5;
+  width:250px;
+  height:30px;
+  color:white;
+  margin:155px 0 0 0;
+  text-align: center;
+  padding: 10px 0 0 0;
+  font-weight:bold;
+  font-family:'Times New Roman', Times, serif;
 }
 
-.box {
+.textbox {
   position: absolute;
   width: 100%;
   height: 70px;
@@ -130,35 +224,89 @@ h3 {
   text-align: center;
 }
 
-/*Contact*/
 
-input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #4aaaa5; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-top: 10px;
+.wrapper {
+  min-height: 100%;
+  margin-bottom: 5%;
 }
 
 /* Footer */
+.push {
+  height: 15%;
+}
+.footer{
+  border-top: 10px #4aaaa5;
+  border-style: solid;
+  height:50px;
+  background-color:#666666;
+  width:100%;
+  text-align:center;
+  color: white; 
+  padding:20px 0 0 0;
+}
+@media screen and (max-width: 640px){
+  h1{
+    position: left static;
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0%; 
+    background-color:#4aaaa5;
+  }
+  .nav{
+    position:static;
+    float: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  Contact{
+    margin-right:30%;
+  }
+  .square{
+    width:55%;
+    height:70%;
+    margin:auto;
+    margin-top: 15%
+  }
+  img{
+    float:left;
+    width:100%;
+    height: auto;
+    padding: 5px 25px 5px 0px;
+}
 
-.footer {
-  position: fixed;
-  left: -480px;
-  bottom: 0;
-  width: 100%;
-  background-color: #5c5c5c;
-  color: white;
-  text-align: center;
+
+
+
+}
+@media screen and (max-width: 768px){
+  h1{
+    max-width: 100%;
+    background:#4aaaa5;
+    height: 50px;
+    padding: 25px 10px 10px 10px;
+    border: 1px solid white;
+    float: left;
+  }
+  .nav{
+    position: center static;
+    float: none;
+    max-width: 100%;
+  }
+  .square{
+    width:85%;
+    height:80%;
+    margin:5%;
+  }
+
+}
+@media screen and (max-width: 980px){
+  h1{
+    max-width: 100%;
+    background:#4aaaa5;
+    height: 50px;
+    padding: 25px 10px 10px 10px;
+    border: 1px solid white;
+    float: left;
+  }
 }

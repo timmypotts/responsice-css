@@ -1,34 +1,31 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
+<div class="wrapper">
 <head>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Contact</title>
+   
 </head>
 
-
 <body>
+ <section class="navbar">
+    <h1>Tim Potts</h1>
+    <Contact><a href="contact.html">Contact</a></Contact>
+    <Portfolio><a href="portfolio.html">Portfolio</a></Portfolio>
+    <About><a href="index.html">About</a></About>
+ </section>
 
-    <header>
-            <div class="margin">
-            <ul>
-                    <li><a href="./index.html">About</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-            </ul>
-            </div>
-        </header>
-        <div class="head">
-                <h1>Tim Potts</h1>
-        </div>
-    
-          
-            
 
-    <div>
-        <h2>Contact</h2>
+<section class="clearfix">
+  <section class="square">
+    <h2>Contact</h2>
+    <hr>
+    <form>
         <p><strong>Name:</strong></p>
         <input type="text">
 
@@ -36,15 +33,14 @@
         <input type="text">
 
         <p><strong>Message:</strong></p>
-        <textarea rows="10" cols="117"></textarea>
+        <input type="text" class="message" name= "message"><br><br>
 
-        <button>Submit</button>
-    </div>
-
-
-    <div class="footer">
-        <p>Copyright</p>
-    </div>
+    </form>
+    <button>Submit</button>
     
+</section>
 </body>
+<div class="push"></div>
+</div>
+<div class="footer">Copyright</div>
 </html>

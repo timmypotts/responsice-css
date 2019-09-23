@@ -1,79 +1,58 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
+<div class="wrapper">
 <head>
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Portfolio</title>
+   
 </head>
 
-
 <body>
+ <section class="navbar">
+    <h1>Tim Potts</h1>
+    <Contact><a href="./contact.html">Contact</a></Contact>
+    <Portfolio><a href="./portfolio.html">Portfolio</a></Portfolio>
+    <About><a href="./index.html">About</a></About>
+ </section>
 
-<header>
-        <div class="margin">
-        <ul>
-                <li><a href="./index.html">About</a></li>
-                <li><a href="./portfolio.html">Portfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-        </ul>
-        </div>
-</header>
-<div class="head">
-        <h1>Tim Potts</h1>
-</div>
-    
-
-
-<div>
-        <h2>Portfolio</h2>
-
-        <div class="thumb">
-                <a href="https://en.wikipedia.org/wiki/Gary_Busey"><img class="thumb" src="./assets/images/thumb1.png" alt="Picture of me">
-                <div class="box">
-                        <h3>Hangman</h3>
-                </div>
-        </div>       
-
-
-        <div class="thumb">
-                <a href="https://en.wikipedia.org/wiki/Gary_Busey"><img class="thumb" src="./assets/images/thumb2.png" alt="Picture of me">
-                <div class="box">
-                        <h3>Trivia</h3>
-                </div>
-        </div>
-
-
-        <div class="thumb">
-                <a href="https://en.wikipedia.org/wiki/Gary_Busey"><img class="thumb" src="./assets/images/thumb3.png" alt="Picture of me">
-                <div class="box">
-                        <h3>RPG Game</h3>
-                </div>
-        </div>
  
-
-        <div class="thumb">
-                <a href="https://en.wikipedia.org/wiki/Gary_Busey"><img class="thumb" src="./assets/images/thumb4.png" alt="Picture of me">
-                <div class="box">
-                        <h3>Tetris</h3>
-                </div>
+<section class="clearfix">
+  <section class="square">
+    <h2>
+      Portfolio
+    </h2>
+    <hr>
+    <div class="tiles">
+        <div class="tile">
+          <img class="img"src="./assets/images/thumb1.png" alt="Hangman">
+          <div class="overlay">Hangman</div>
         </div>
-
-
-        <div class="thumb">
-                <a href="https://en.wikipedia.org/wiki/Gary_Busey"><img class="thumb" src="./assets/images/thumb5.png" alt="Picture of me">
-                <div class="box">
-                        <h3>And more!</h3>
-                </div>
+        <div class="tile">
+          <img class="img"src="./assets/images/thumb2.png" alt="RPG">
+          <div class="overlay">RPG Game</div>
         </div>
-
-
-</div>
-
-<div class="footer">
-        <p>Copyright</p>
-</div>
+        <div class="tile">
+          <img class="img"src="./assets/images/thumb3.png" alt="Trivia">
+          <div class="overlay">Trivia Game</div>
+        </div>
+        <div class="tile">
+          <img class="img"src="./assets/images/thumb4.png" alt="Rutgers">
+          <div class="overlay">Rutgers Info Widget</div>
+        </div>
+        <div class="tile">
+          <img class="img"src="./assets/images/thumb5.png" alt="Rock, Papaer, Scissors">
+          <div class="overlay">Rock Paper Scissors</div>
+        </div>
+    </div>
     
+</section>
 </body>
+<div class="push"></div>
+</div>
+<div class="footer">Copyright</div>
 </html>
